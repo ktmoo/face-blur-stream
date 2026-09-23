@@ -44,8 +44,8 @@ android {
 apply(from="download_models.gradle")
 
 dependencies {
-implementation("com.github.pedroSG94.RootEncoder:rtmp:2.4.5")
-    implementation("androidx.core:core-ktx:1.9.0")
+implementation("com.github.DeMille:android-ndi:1.0.2")
+implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")

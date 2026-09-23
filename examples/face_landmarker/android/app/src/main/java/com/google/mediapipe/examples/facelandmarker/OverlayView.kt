@@ -42,12 +42,12 @@ class OverlayView(context: Context?, attrs: AttributeSet?) : View(context, attrs
                 if (y > maxY) maxY = y
             }
             
-            // Draw a heavy blur mask covering the whole face area
+            // Cover face boundaries with a solid privacy blur
             canvas.drawOval(minX - 40f, minY - 80f, maxX + 40f, maxY + 40f, blurPaint)
         }
     }
 
-    fun setResults(faceLandmarkerResult: FaceLandmarkerResult, imageHeight: Int, imageWidth: Int, runningMode: com.google.mediapipe.examples.facelandmarker.MainViewModel.RunningMode) {
+    fun setResults(faceLandmarkerResult: FaceLandmarkerResult, imageHeight: Int, imageWidth: Int, runningMode: com.google.mediapipe.examples.facelandmarker.MainViewModel.RunningMode = com.google.mediapipe.examples.facelandmarker.MainViewModel.RunningMode.LIVE_STREAM) {
         results = faceLandmarkerResult
         invalidate()
     }

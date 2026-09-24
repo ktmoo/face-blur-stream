@@ -65,7 +65,7 @@ class CameraFragment : Fragment() {
                         }
                     }
                 }
-                override fun onError(error: String, errorCode: Int) {}
+                override fun onError(error: String) {}
             }
         )
     }

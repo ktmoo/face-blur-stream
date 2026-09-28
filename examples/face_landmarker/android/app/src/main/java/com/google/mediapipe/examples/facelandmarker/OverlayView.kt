@@ -57,11 +57,11 @@ class OverlayView(context: Context?, attrs: AttributeSet?) : View(context, attrs
     }
 
     fun setResults(
-        faceLandmarkerResult: FaceLandmarkerResult,
-        imageHeight: Int,
-        imageWidth: Int,
-u    runningMode: RunningMode = RunningMode.IMAGE
-    ) {
+            faceLandmarkerResults: FaceLandmarkerResult,
+                    imageHeight: Int,
+                            imageWidth: Int,
+                                    runningMode: RunningMode = RunningMode.IMAGE
+                                    ) {
         results = faceLandmarkerResult
         invalidate()
     }

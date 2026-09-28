@@ -48,7 +48,7 @@ class CameraFragment : Fragment() {
                                 resultBundle.results,
                                 resultBundle.inputImageHeight,
                                 resultBundle.inputImageWidth,
-                                com.google.mediapipe.examples.facelandmarker.MainViewModel.RunningMode.LIVE_STREAM
+                            runningMode: RunningMode = RunningMode.IMAGE
                             )
                             
                             val blurredBitmap = fragmentCameraBinding.overlay.getBitmap()

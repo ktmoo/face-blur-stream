@@ -59,7 +59,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) : View(context, attrs
         faceLandmarkerResult: FaceLandmarkerResult,
         imageHeight: Int,
         imageWidth: Int,
-        runningMode: com.google.mediapipe.examples.facelandmarker.MainViewModel.RunningMode
+        runningMode: RunningMode = RunningMode.IMAGE
     ) {
         results = faceLandmarkerResult
         invalidate()

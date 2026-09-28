@@ -1,3 +1,4 @@
+import com.google.mediapipe.tasks.vision.core.RunningMode
 package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Context

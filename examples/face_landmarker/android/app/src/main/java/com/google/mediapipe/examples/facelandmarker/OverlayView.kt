@@ -1,4 +1,5 @@
 package com.google.mediapipe.examples.facelandmarker
+
 import com.google.mediapipe.tasks.vision.core.RunningMode
 import android.content.Context
 import android.graphics.Bitmap

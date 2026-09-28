@@ -57,7 +57,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) : View(context, attrs
     }
 
     fun setResults(
-            faceLandmarkerResults: FaceLandmarkerResult,
+            faceLandmarkerResult: FaceLandmarkerResult,
                     imageHeight: Int,
                             imageWidth: Int,
                                     runningMode: RunningMode = RunningMode.IMAGE
